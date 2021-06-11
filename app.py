@@ -324,7 +324,7 @@ def predict():
         
         prediction= Total_stops
 
-        output=round(prediction[0],2)
+        output = prediction
 
         return render_template('home.html',prediction_text="Your Flight price is Rs. {}".format(output))
 
