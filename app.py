@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 
 app = Flask(__name__)
-model = pickle.load(open("flight_rf.pkl", "rb"))
+
 
 
 
@@ -322,37 +322,7 @@ def predict():
     #    'Destination_Cochin', 'Destination_Delhi', 'Destination_Hyderabad',
     #    'Destination_Kolkata', 'Destination_New Delhi']
         
-        prediction=model.predict([[
-            Total_stops,
-            Journey_day,
-            Journey_month,
-            Dep_hour,
-            Dep_min,
-            Arrival_hour,
-            Arrival_min,
-            dur_hour,
-            dur_min,
-            Air_India,
-            GoAir,
-            IndiGo,
-            Jet_Airways,
-            Jet_Airways_Business,
-            Multiple_carriers,
-            Multiple_carriers_Premium_economy,
-            SpiceJet,
-            Trujet,
-            Vistara,
-            Vistara_Premium_economy,
-            s_Chennai,
-            s_Delhi,
-            s_Kolkata,
-            s_Mumbai,
-            d_Cochin,
-            d_Delhi,
-            d_Hyderabad,
-            d_Kolkata,
-            d_New_Delhi
-        ]])
+        prediction= Total_stops
 
         output=round(prediction[0],2)
 
