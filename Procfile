@@ -1,1 +1,1 @@
-web: gunicorn aki-prediction:app
+web: gunicorn app:app
