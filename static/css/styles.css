@@ -1,6 +1,11 @@
 body {
     background-color: #e1f4f3;
     text-align: center;
+    background-image: url('https://imgur.com/fyC58');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
 }
 
 .navbar {
