@@ -47,7 +47,7 @@ gensim==4.0.1
 
 gffutils==0.10.1
 
-gmpy2==2.0.8
+
 google-auth==1.31.0
 google-auth-oauthlib==0.4.4
 google-pasta==0.2.0
