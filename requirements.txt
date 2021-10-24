@@ -126,7 +126,7 @@ setuptools-scm==5.0.2
 simplegeneric==0.8.1
 simplejson==3.17.5
 
-sip==4.19.13
+
 
 sklearn==0.0
 
@@ -140,7 +140,7 @@ tables==3.6.1
 
 
 
-unicodecsv==0.14.1
+
 
 
 webencodings==0.5.1
