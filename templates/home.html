@@ -44,12 +44,7 @@
                         <div class="card-body">
                             <!-- Source -->
                             <h5 class="card-title">Age</h5>
-                            <select name="Age" id="age" required="required">
-                                <option value="0">Below 40</option>
-                                <option value="6">Between 40 and 60</option>
-                                <option value="9">Between 60 and 80</option>
-                                <option value="13">Above 80</option>
-                            </select>
+                            <input type="number" name="Age" id="duration" required="required">
                         </div>
                     </div>
                 </div>
@@ -61,10 +56,10 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Source -->
-                            <h5 class="card-title">Sex</h5>
-                            <select name="Sex" id="sex" required="required">
-                                <option value="0">Female</option>
-                                <option value="8">Male</option>
+                            <h5 class="card-title">Gender</h5>
+                            <select name="Gender" id="sex" required="required">
+                                <option value="1">Female</option>
+                                <option value="0">Male</option>
                             </select>
                         </div>
                     </div>
@@ -74,26 +69,17 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Source -->
-                            <h5 class="card-title">eGFR value</h5>
-                            <select name="eGFR(mL/min/1.73 m^2)" id="egfr" required="required">
-                                <option value="0">Above 60</option>
-                                <option value="8">Between 45 and 60</option>
-                                <option value="15">Between 30 and 45</option>
-                                <option value="22">Between 15 and 30</option>
-                                <option value="6">Dipstick albuminuria</option>
-                            </select>
+                            <h5 class="card-title">Total Bilirubin</h5>
+                            <input type="number" name="Total Bilirubin" id="duration1" required="required">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Hypoalbuminemia(g/dL)</h5>
+                            <h5 class="card-title">Direct Bilirubin</h5>
                             <!-- Destination -->
-                            <select name="Hypoalbuminemia" id="hypo" required="required">
-                                <option value="8">Less than 3.5</option>
-                                <option value="0">Greater than or equal to 3.5</option>
-                            </select>
+                            <input type="number" name="Direct Bilirubin" id="duration2" required="required">
                         </div>
                     </div>
                 </div>
@@ -109,44 +95,35 @@
                     <div class="card">
                         <div class="card-body">
                             <!-- Source -->
-                            <h5 class="card-title">Expected surgical Duration(hours)</h5>
-                            <input type="number" name="Expected surgical Duration(hours)" id="duration" required="required">
+                            <h5 class="card-title">Alkaline Phosphotase</h5>
+                            <input type="number" name="Alkaline Phosphotase" id="duration3" required="required">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Is this emergency operation?</h5>
+                            <h5 class="card-title">Alamine Aminotransferase</h5>
                             <!-- Destination -->
-                            <select name="emergency operation" id="eo" required="required">
-                                <option value="0">No</option>
-                                <option value="7">Yes</option>
-                            </select>
+                           <input type="number" name="Alamine Aminotransferase" id="duration4" required="required">
                         </div>
                     </div>
                 </div>
                  <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Has Diabetes mellitus condition?</h5>
+                            <h5 class="card-title">Aspartate Aminotransferase</h5>
                             <!-- Destination -->
-                            <select name="Diabetes" id="diab" required="required">
-                                <option value="0">No</option>
-                                <option value="4">Yes</option>
-                            </select>
+                            <input type="number" name="Aspartate Aminotransferasee" id="duration5" required="required">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">RAAS Blockade Use?</h5>
+                            <h5 class="card-title">Total Protiens</h5>
                             <!-- Destination -->
-                            <select name="RAAS Blockade Use" id="raas" required="required">
-                                <option value="0">No</option>
-                                <option value="6">Yes</option>
-                            </select>
+                            <input type="number" name="Total Protiens" id="duration6" required="required">
                         </div>
                     </div>
                 </div>
@@ -162,25 +139,18 @@
                  <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Anemia(g/dL)</h5>
+                            <h5 class="card-title">Albumin</h5>
                             <!-- Destination -->
-                            <select name="Anemia" id="anem" required="required">
-                                <option value="4">Less than 12 and female</option>
-                                <option value="4">Less than 13 and male</option>
-                                <option value="0">Other category</option>
-                            </select>
+                            <input type="number" name="Albumin" id="duration7" required="required">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Hyponatremia(mEq/L)</h5>
+                            <h5 class="card-title">Albumin and Globulin_Ratio</h5>
                             <!-- Destination -->
-                            <select name="Hyponatremia" id="hypona" required="required">
-                                <option value="3">Less than 135</option>
-                                <option value="0">Greater than or equal to 135</option>
-                            </select>
+                            <input type="number" name="Albumin and Globulin Ratio" id="duration8" required="required">
                         </div>
                     </div>
                 </div>
