@@ -24,7 +24,7 @@ def predict():
         Gender = int(request.form["Gender"])
         Total_Bilirubin = int(request.form["Total Bilirubin"])
         Direct_Bilirubin = int(request.form["Direct Bilirubin"])
-        Alkaline_Phosphotase = int(request.form["Alkaline Phosphotase"]
+        Alkaline_Phosphotase = int(request.form["Alkaline Phosphotase"])
         Alamine_Aminotransferase = int(request.form["Alamine Aminotransferase"])
         Aspartate_Aminotransferase = int(request.form["Aspartate Aminotransferase"])
         Total_Protiens = int(request.form["Total Protiens"])
