@@ -3,6 +3,7 @@ from flask_cors import cross_origin
 import sklearn
 import pickle
 import pandas as pd
+import joblib
 
 app = Flask(__name__)
 @app.route("/")
@@ -31,7 +32,7 @@ def predict():
         Albumin = int(request.form["Albumin"])
         Albumin_and_Globulin_Ratio = int(request.form["Albumin and Globulin Ratio"])
         # print(Total_stops)
-        loaded_model = pickle.load(open("LiverDisease.pkl","rb"))
+        loaded_model = joblib.load('LiverDisease.pkl', mmap_mode=None)
         data= [[Age,Gender,Total_Bilirubin,Direct_Bilirubin,Alkaline_Phosphotase,Alamine_Aminotransferase,
                Aspartate_Aminotransferase,Total_Protiens,Albumin,Albumin_and_Globulin_Ratio]]
         dftest = pd.DataFrame(data, columns = ['Age','Gender','Total_Bilirubin','Direct_Bilirubin','Alkaline_Phosphotase',
