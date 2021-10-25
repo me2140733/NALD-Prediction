@@ -46,7 +46,7 @@ def predict():
         if(result[0]==1):
 
             return render_template('home.html',prediction_text="This patient may have liver disease. Further diagnosis is required.")
-        if(result[0]==2):
+        if(result[0]==0):
 
             return render_template('home.html',prediction_text="This patient does have liver disease.")
 
